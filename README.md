@@ -22,17 +22,21 @@ pip install -e .
 ```
 
 # Generate Synthetic Data
-We use RadQA as an example. For MIMIC-QA, just replace `radqa` with `mimicqa`.
+## RadQA
 ```
 # Direct Instruction (e.g., "generate 10 questions...")
 bash scripts/generate/run_generate.sh radqa direct_instruction gpt-4o-2024-05-13
 
-# Summarization + Direct Instruction
-bash scripts/generate/run_generate.sh radqa summarization_direct_instruction gpt-4o-2024-05-13
-
 # Summarization + No Overlap
 bash scripts/generate/run_generate.sh radqa summarization_nonoverlap gpt-4o-2024-05-13
+```
+## MIMIC-QA
+```
+# Direct Instruction
+bash scripts/generate/run_generate.sh mimicqa direct_instruction gpt-4o-2024-05-13
 
+# Summarization + Question Prefix
+bash scripts/generate/run_generate.sh mimicqa summarization_explicit gpt-4o-2024-05-13
 ```
 
 # Process Generated Data
