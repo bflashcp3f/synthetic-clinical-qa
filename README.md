@@ -1,8 +1,17 @@
-Give me Some Hard Questions: Synthetic Data Generation for Clinical QA
-====================================================================================================
+# Give me Some Hard Questions: Synthetic Data Generation for Clinical QA
 
-<!-- # Method: InstrucTE
-<img src="figures/method.png" > -->
+This repo provides code and data associated with ML4H 2024 Findings paper ["Give me Some Hard Questions: Synthetic Data Generation for Clinical QA"](https://arxiv.org/abs/2412.04573).
+```
+@misc{bai2024hardquestionssyntheticdata,
+      title={Give me Some Hard Questions: Synthetic Data Generation for Clinical QA}, 
+      author={Fan Bai and Keith Harrigian and Joel Stremmel and Hamid Hassanzadeh and Ardavan Saeedi and Mark Dredze},
+      year={2024},
+      eprint={2412.04573},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.04573}, 
+}
+```
 
 # Installment
 
@@ -21,7 +30,10 @@ conda activate cqa
 pip install -e .
 ```
 
-# Generate Synthetic Data
+# Data
+We experiment with two Clinical QA datasets: [RadQA](https://physionet.org/content/radqa/1.0.0/) and [MIMIC-QA](https://physionet.org/content/mimic-iii-question-answer/1.0.0/), both of which can be accessed through PhysioNet.
+
+# Synthetic Data Generation
 ## RadQA
 ```
 # Direct Instruction (e.g., "generate 10 questions...")
