@@ -31,7 +31,7 @@ pip install -e .
 ```
 
 # Data
-We experiment with two Clinical QA datasets: [RadQA](https://physionet.org/content/radqa/1.0.0/) and [MIMIC-QA](https://physionet.org/content/mimic-iii-question-answer/1.0.0/), both of which can be accessed through PhysioNet.
+We experiment with two Clinical QA datasets: [RadQA](https://physionet.org/content/radqa/1.0.0/) and [MIMIC-QA](https://physionet.org/content/mimic-iii-question-answer/1.0.0/), both of which can be accessed through PhysioNet. To get started, download the datasets to their respective directories (e.g., `data/raw/radqa`). Once downloaded, preprocess the data using the provided notebook (e.g., `notebooks/radqa_preprocess.ipynb`).
 
 # Synthetic Data Generation
 ## RadQA
